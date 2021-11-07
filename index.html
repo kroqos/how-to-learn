@@ -29,7 +29,9 @@
           class="header__main-illustration"
           title="Картина Решетникова «Опять двойка»"
         ></div>
-        <!-- Выше для фонового изображения использован атрибут "title" вместо атрибута  "alt"-->
+        <!-- Выше для фонового изображения использован атрибут "title" 
+          вместо атрибута  "alt". Это сделано чтобы не 
+          использовать <img> для фоновых изображений-->
         <div class="header__square-pic"></div>
       </header>
       <!-- Конец секции Header -->
@@ -71,7 +73,7 @@
 
         <!-- Начало секции с цифрами и фактами -->
         <section class="digits">
-          <h2 class="section-title">Цифры и факты</h2>
+          <h2 class="section-title centered-block">Цифры и факты</h2>
           <h3 class="section-subtitle">Про учёбу и мозг</h3>
           <div class="table">
             <div class="table__cell">
@@ -221,48 +223,52 @@
             />
             <p class="footer__author">&copy; 2021. Илья Сагитов</p>
           </div>
-          <div class="footer__column footer__column_content_info">
+          <nav class="footer__column footer__column_content_info">
             <h5 class="footer__column-heading">О Практикуме</h5>
-            <ul class="footer_column-links">
-              <li class="column-link">
+            <ul class="footer__column-links">
+              <li>
                 <a
                   href="https://practicum.yandex.ru/"
+                  class="footer__column-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Главная</a
                 >
               </li>
-              <li class="column-link">
+              <li>
                 <a
                   href="https://habr.com/ru/company/yandex_praktikum/blog/550990/"
+                  class="footer__column-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Концепция</a
                 >
               </li>
-              <li class="column-link">
+              <li>
                 <a
                   href="https://practicum.yandex.ru/promo/mentors-school"
+                  class="footer__column-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Наставники</a
                 >
               </li>
             </ul>
-          </div>
-          <div class="footer__column footer__column_content_social">
+          </nav>
+          <nav class="footer__column footer__column_content_social">
             <h5 class="footer__column-heading">Соцсети</h5>
             <ul class="footer__column-links">
               <li>
                 <a
                   href="https://www.facebook.com/yandex.practicum/"
+                  class="footer__column-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     src="/images/facebook_color_white.svg"
                     alt="иконка Facebook"
-                    rel="noopener noreferrer"
+                    class="footer__social-icon"
                   />
                   Facebook</a
                 >
@@ -270,12 +276,14 @@
               <li>
                 <a
                   href="https://vk.com/yandex.practicum"
+                  class="footer__column-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     src="/images/vk_color_white.svg"
                     alt="иконка Вконтакте"
+                    class="footer__social-icon"
                   />
                   Вконтакте</a
                 >
@@ -283,18 +291,20 @@
               <li>
                 <a
                   href="https://www.instagram.com/yndx.practicum/?hl=en"
+                  class="footer__column-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     src="/images/instagram_color_white.svg"
                     alt="иконка Instagram"
+                    class="footer__social-icon"
                   />
                   Instagram</a
                 >
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </footer>
       <!-- Конец секции Footer -->

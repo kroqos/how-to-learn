@@ -1,14 +1,11 @@
 .page {
   display: flex;
   min-width: 1100px;
-  /* установлена минимальная ширина страницы */
+  min-height: 100vh;
   max-width: 1600px;
-  /* установлено ограничение по максимальной ширине */
   margin: 0 auto;
-  /* для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .header {
@@ -55,6 +52,7 @@
   text-decoration: none;
   font-weight: normal;
   color: #2f80ed;
+  transition: all 0.7s ease;
 
   /* border: 1px solid black; */
 }
@@ -63,6 +61,10 @@
   content: " →";
 
   /* border: 1px solid black; */
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -89,13 +91,16 @@
   /* border: 1px solid black; */
 }
 
+.logo {
+  width: 183px;
+  height: 32px;
+  z-index: 2;
+}
+
 .logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
-  width: 183px;
-  height: 32px;
-  z-index: 2;
 
   /* border: 1px solid black; */
 }
@@ -286,6 +291,7 @@
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  transition: all 0.7s ease;
 
   /* border: 1px solid black; */
 }
@@ -294,6 +300,10 @@
   content: " →";
 
   /* border: 1px solid black; */
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
 }
 
 .kaufman {
@@ -311,9 +321,9 @@
 .kaufman__triangle {
   background-image: url(/images/kaufman-triangle.svg);
   background-size: cover;
-  position: absolute;
   width: 877px;
   height: 877px;
+  position: absolute;
   right: -210px;
   top: -5px;
 
@@ -344,24 +354,92 @@
   background-color: #1f1f1f;
   color: #fff;
 
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .footer__columns {
   display: flex;
   width: 90%;
-  flex-basis: 711px;
-  /* justify-content: space-between; */
+  margin: 0 auto;
+  justify-content: space-between;
 
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .footer__column_content_copyright {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-basis: 711px;
+
+  /* border: 1px solid white; */
 }
 
 .logo_place_footer {
+  display: flex;
   justify-content: flex-start;
+
+  /* border: 1px solid white; */
+}
+
+.footer__author {
+  display: flex;
+  justify-content: flex-start;
+  margin: 18px 0;
+  padding: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+
+  /* border: 1px solid white; */
+}
+
+.footer__column_content_info {
+  /* border: 1px solid white; */
+}
+
+.footer__column_content_social {
+  /* border: 1px solid white; */
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+  margin: 20px 0 16px;
+
+  /* border: 1px solid white; */
+}
+
+.footer__column-link {
+  color: #fff;
+  text-decoration: none;
+  height: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  transition: all 0.7s ease;
+
+  /* border: 1px solid white; */
+}
+
+.footer__column-link:hover {
+  opacity: 0.6;
+}
+
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+
+  /* border: 1px solid white; */
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+
+  /* border: 1px solid white; */
 }
