@@ -1,3 +1,9 @@
+/* .main-page_scroll_smooth {
+  scroll-behavior: smooth;
+  после окончательной проверки создать 
+  блок для <html> и добавить это через 
+  модификатор для плавной прокрутки */
+
 .page {
   display: flex;
   min-width: 1100px;
