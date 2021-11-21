@@ -1,0 +1,14 @@
+.header__link {
+  text-decoration: none;
+  font-weight: normal;
+  color: #2f80ed;
+  transition: all 0.7s ease;
+}
+
+.header__link::after {
+  content: " →";
+}
+
+.header__link:hover {
+  opacity: 0.5;
+}
