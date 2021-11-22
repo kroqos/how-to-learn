@@ -38,6 +38,16 @@
 @import url(../blocks/cards/__description/cards__description.css);
 /* Конец блока Cards */
 
+/* Начало блока Video */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+/* Конец блока Video */
+
+/* Начало блока Oakley */
+@import url(../blocks/oakley/oakley.css);
+/* Конец блока Oakley */
+
 /* Начало блока Feynman */
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__title/feynman__title.css);
