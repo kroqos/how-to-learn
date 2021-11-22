@@ -5,10 +5,8 @@
   модификатор для плавной прокрутки */
 
 .page {
-  display: flex;
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  flex-direction: column;
 }
