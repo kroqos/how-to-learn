@@ -4,6 +4,10 @@
 
 @import url(../blocks/page/page.css);
 
+@import url(../blocks/image-is-clickable/image-is-clickable.css);
+
+@import url(../blocks/rotation/rotation.css);
+
 /* Начало блока Header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
@@ -105,5 +109,3 @@
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 /* Конец блока Footer */
-
-@import url(../blocks/rotation/rotation.css);
